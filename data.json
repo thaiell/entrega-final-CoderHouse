@@ -1,0 +1,8 @@
+[   
+    {"idProduct": 95, "handmakerName": "Produccion De La Casa", "nameProduct": "traje de spiderman", "URLimg": "img/trajeDeSpiderman.webp", "URLDescription": "traje de spiderman para niños", "priceProduct": 3000},
+    {"idProduct": 96, "handmakerName": "Produccion De La Casa", "nameProduct": "silla de madera", "URLimg": "img/sillaDeMadera.jpeg", "URLDescription": "silla de madera para el patio", "priceProduct": 6000},
+    {"idProduct": 97, "handmakerName": "Produccion De La Casa", "nameProduct": "tazas para café", "URLimg": "img/tazas.webp", "URLDescription": "tazas de cafe resistente a altas temperaturas", "priceProduct": 1200},
+    {"idProduct": 98, "handmakerName": "Produccion De La Casa", "nameProduct": "anillo de compromiso", "URLimg": "img/anilloDeCompromiso.webp", "URLDescription": "anillo de compromiso", "priceProduct": 1250},
+    {"idProduct": 99, "handmakerName": "Produccion De La Casa", "nameProduct": "collar con esmeralda", "URLimg": "img/collarVerde.jpeg", "URLDescription": "collar con gema verde Esmeralda", "priceProduct": 5250},
+    {"idProduct": 100, "handmakerName": "Produccion De La Casa", "nameProduct": "collar Con Cuarzo", "URLimg": "img/collarCuarzo.webp", "URLDescription": "collar con Cuarzo", "priceProduct": 2500}
+]

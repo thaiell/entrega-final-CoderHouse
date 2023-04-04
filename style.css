@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F4ECF7;
+}
+/* HEADER */
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-image: url(img/madera2.jpeg);
+    background-repeat: repeat;
+    background-position: center center;
+    background-color:rgb(220, 161, 85);
+    margin-bottom: 50px;
+}
+
+/* HEADER LEFT */
+.headerLeft {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+.headerLeft button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 6.5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+.headerLeft .filterForm {
+    display: flex;
+    flex-direction: column;
+}
+.headerLeft .filterForm input {
+    margin: 6.5px;
+}
+.filterForm h5, span {
+    color: white;
+}
+/* SEARCHER */
+
+.searcher {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 23px;
+}
+.searcherInput {
+    height: 30px;
+    width: 260px;
+    padding: 0;
+}
+.searcherButton {
+    margin-left: 10px;
+
+    background-color: aliceblue;
+    height: 30px;
+    width: 35px;
+    padding: 0;
+}
+
+/* HEADER RIGHT */
+.headerRight {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.headerRight button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+.headerRight button:hover {
+        background-color: gray;
+        transition: all .1s ease;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+}
+
+.headerRightBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: whitesmoke;
+} 
+
+.headerRight .icon {
+    margin: 0 20px;
+}
+
+/* SECTION CARDS */
+.container-section-cards, .container-outstandart-section  {
+    text-align: center;
+}
+.section-cards, .section-outstandart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 302px), 1fr));
+    grid-template-rows: 500px;
+    gap: 30px;
+    place-items: center;
+}
+
+.mycard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 500px;
+    max-height: 500px;
+    margin: 0 10px;
+    padding-bottom: 10px;
+    background-color: #a05000;
+    background-image: url("img/madera2.jpeg");
+    padding: 5px;
+    position: relative;
+}
+ .mycard img {
+    max-width: 100%;
+    min-height: 380px;
+    height: 380px;
+    object-fit: cover;
+} 
+
+.productNameCard {
+    margin-bottom: 0;
+    max-height: 110px;
+    font-size: clamp(16px, 2.5vw, 28px);
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: white;
+}
+.handmakerName {
+    font-style: italic;
+    color: #999;
+    margin-top: 0;
+    color: white;
+}
+.cardContent{
+    display:flex;
+    flex-direction: column;
+
+}
+.wordCard {
+    text-align: left;
+}
+
+.buttonToRight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttonToRight b { 
+     font-size: 30px;
+    font-weight: 300;
+    max-width: 100px;
+    max-height: 90px;
+    overflow:hidden;
+    color: white;
+}
+.buttonShopCart {
+    background-color: lightgrey;
+    border: 0.1px grey solid;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+    width: 175px;
+    height: 30px;
+}
+
+/* CARRITO DE COMPRAS */
+.cartProductList {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.leftBlock{
+    display: flex;
+    align-items: center;
+    /* flex: 2; */
+    border: solid .5px black;
+}
+
+.rightBlock {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid .5px black;
+}
+
+.rightBlock p {
+    font-size: 30px;
+    margin: 0;
+}
+.rightBlock button {
+    background-color: red;
+    width: 100%;
+    border: .5;
+}
+.imgCartShopList {
+    width: 100px;
+}
+
+/* DECORACION DEL MENU CARRITO */
+.offcanvas-header {
+    border-bottom: solid .5px gray;
+    height: 100px;
+}
+.offcanvas-footer {
+height: 100px;
+border-top: solid .5px gray;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.offcanvas-footer h5 {
+    margin-left: 16px;
+}
+.buyBtn {
+    margin-right: 16px;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+    width: 100px;
+    height: 35px;
+}
