@@ -7,6 +7,9 @@ body {
     padding: 0;
     background-color: #F4ECF7;
 }
+.separator {
+    margin: 30px 0;
+}
 /* HEADER */
 
 header {
@@ -255,4 +258,69 @@ justify-content: space-between;
     -o-border-radius: 15%;
     width: 100px;
     height: 35px;
+}
+
+/* FOOTER */
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    background-image: url(img/madera2.jpeg);
+    color: white;
+    padding-top: 50px;
+}
+.footer{
+    position: relative;
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+}
+.footer h3{
+    margin-bottom: 15px;
+}
+/* LEFT FOOTER */
+.footerSocial {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.footerSocial a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: blue;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.whatsappDiv {
+    margin-top: 50px;
+}
+.whatsappIcon {
+    font-size: 20px;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+}
+/* MID FOOTER */
+.footerList {
+    position: relative;
+    max-width: 80%;
+}
+/* RIGHT FOOTER */
+.footer .imgFooter {
+    width: 50%;
+    margin-top: 30px;
 }

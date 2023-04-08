@@ -55,9 +55,12 @@ div.innerHTML = `
 `;
 menuFooter.appendChild(div);
 cartUpdate();
+
+let buyModalButton = document.getElementById("buyModal");
+buyModalButton.addEventListener("click", () => {
+    alert("poner otro toastify de que mcompraste y luego especificalrle al profe en la entrega que lo hice asi sencillito porque ya no podia usar mas JS")
+})
 } // CONSTRUCTOR DE CARRITO EN LOCALSTORAGE
-
-
 
 // PROCESO DE AGREGADO AL SHOPCART
 
@@ -67,7 +70,13 @@ const addProduct = (id) => {
         // ESTO COMPARA LOS ID, SI COINCIDEN, EL PRODUCTO NO SE AGREGA A EL SHOP CART
   
 if(product.idProduct === already.idProduct){
-    alert("Producto ya agregado")
+    Toastify({
+        text: "Este producto ya se encuentra en el carrito",
+        close: true,
+        style: {
+        background: "linear-gradient(to right, #FF5733, #FFC300)",
+        }   
+    }).showToast();
 } else {
     shopCartStorage.push(product);
     localStorage.setItem("shopCartStorage", JSON.stringify(shopCartStorage));
@@ -188,43 +197,6 @@ data.forEach(product => {
     button.addEventListener("click", () => addProduct(product.idProduct));   
 })
 }
-
-/* // API DE MERCADO PAGO
- fetch('https://api.mercadopago.com/v1/customers', {
-
-method: "POST",
-headers : {
-    "Authorization": "Bearer <ENV_ACCESS_TOKEN>",
-    'Content-Type': 'application/json'
-},
-body: JSON.stringify({
-  "email": "jhon@doe.com",
-  "first_name": "Jhon",
-  "last_name": "Doe",
-  "phone": {
-    "area_code": "55",
-    "number": "991234567"
-  },
-  "identification": {
-    "type": "CPF",
-    "number": "12345678900"
-  },
-  "default_address": "Home",
-  "address": {
-    "id": "123123",
-    "zip_code": "01234567",
-    "street_name": "Rua Exemplo",
-    "street_number": 123,
-    "city": {}
-},
-  "date_registered": "2021-10-20T11:37:30.000-04:00",
-  "description": "Description del user",
-  "default_card": "None"
- })
-}) */
-
-
-
  
 // INICIALIZACION DE LA PAGINA
 bringData();
